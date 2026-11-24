@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Costa Nest — จัดวางชิ้นงานใน Illustrator</title>
+<meta name="description" content="Costa Nest ปลั๊กอิน Adobe Illustrator สำหรับร้านป้ายและสติ๊กเกอร์: จัดวางชิ้นงานตามรูปทรงจริง ไดคัท รันนัมเบอร์ เส้นบอกขนาด คิดราคา ซื้อผ่านพร้อมเพย์ ได้โค้ดทันที">
+<meta name="theme-color" content="#07080a">
+<meta property="og:title" content="Costa Nest — จัดวางชิ้นงานใน Illustrator">
+<meta property="og:description" content="จัดวางชิ้นงานตามรูปทรงจริงให้เต็มแผ่นในคลิกเดียว พร้อมเครื่องมือไดคัท รันนัมเบอร์ เส้นบอกขนาด และคิดราคา">
+<meta property="og:image" content="img/panel-nest.jpg">
+<link rel="icon" href="img/logo-small.png">
+<link rel="preload" href="fonts/kanit-thai-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/ibm-plex-sans-thai-thai-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+<a class="skip" href="#main">ข้ามไปเนื้อหา</a>
+<div class="bgGrid" aria-hidden="true"></div>
+
+<header class="top" id="top">
+  <a class="brand" href="#main" aria-label="Costa Nest หน้าแรก"><img src="img/logo-small.png" alt="" width="54" height="36"><span>COSTA<b>NEST</b></span></a>
+  <nav aria-label="เมนู">
+    <a href="#features">ความสามารถ</a><a href="#demo">เดโม</a><a href="#flow">ขั้นตอน</a><a href="#buy">ราคา</a><a href="#faq">คำถาม</a><a href="#download">ดาวน์โหลด</a>
+  </nav>
+  <a class="btn primary sm" href="#buy">ซื้อเลย</a>
+</header>
+
+<main id="main">
+<!-- ================= hero ================= -->
+<section class="hero">
+  <div class="heroText" data-reveal>
+    <p class="eyebrow"><span class="dot"></span>ILLUSTRATOR PLUG-IN<span class="wide"> · WIN / MAC</span></p>
+    <h1>จัดวางชิ้นงาน<br><span class="grad">เต็มแผ่น<span class="nw">ในคลิกเดียว</span></span></h1>
+    <p class="lead">Costa Nest วางชิ้นงานตามรูปทรงจริง หมุนหามุมที่ลงตัว และใช้พื้นที่ในรูของชิ้นอื่น ให้วัสดุคุ้มที่สุด พร้อมเครื่องมือไดคัท รันนัมเบอร์ เส้นบอกขนาด และคิดราคา ในแผงเดียว</p>
+    <div class="ctaRow">
+      <a class="btn primary" href="#buy">ซื้อ Costa Nest <span aria-hidden="true">→</span></a>
+      <a class="btn ghost" href="#demo">ดูเดโมการจัดวาง</a>
+    </div>
+    <ul class="chips" aria-label="รองรับ">
+      <li>Illustrator 2020+</li><li>Windows · Mac</li><li>ไทย / English</li><li>ได้โค้ดทันทีผ่านพร้อมเพย์</li>
+    </ul>
+  </div>
+
+  <div class="console" data-reveal aria-label="ตัวอย่างการจัดวางชิ้นงานด้วย Costa Nest">
+    <div class="consoleBar"><i></i><i></i><i></i><span>COSTA NEST · TRUE-SHAPE NESTING</span><b id="heroState">SOLVING</b></div>
+    <div class="stageWrap"><canvas id="heroStage" width="1200" height="560" role="img" aria-label="ชิ้นงานรูปทรงต่าง ๆ ถูกจัดวางลงบนแผ่นวัสดุแผ่นเดียว"></canvas><div class="scan" aria-hidden="true"></div></div>
+    <dl class="hud">
+      <div><dt>SHEET</dt><dd id="hudSheet">600 × 235</dd></div>
+      <div><dt>PARTS</dt><dd id="hudParts">0</dd></div>
+      <div><dt>ROTATION</dt><dd id="hudRot">15°</dd></div>
+      <div><dt>UTILIZATION</dt><dd id="hudUtil">0.0%</dd></div>
+    </dl>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="track">
+  <span>ป้ายอะคริลิก</span><span>สติ๊กเกอร์ไดคัท</span><span>ไม้ CNC</span><span>เลเซอร์คัท</span><span>ฉลากสินค้า</span><span>ป้ายไวนิล</span><span>ตรายาง</span><span>งานพิมพ์ทั่วไป</span>
+  <span>ป้ายอะคริลิก</span><span>สติ๊กเกอร์ไดคัท</span><span>ไม้ CNC</span><span>เลเซอร์คัท</span><span>ฉลากสินค้า</span><span>ป้ายไวนิล</span><span>ตรายาง</span><span>งานพิมพ์ทั่วไป</span>
+</div></div>
+
+<!-- ================= demo ================= -->
+<section id="demo" class="demo">
+  <header class="secHead" data-reveal>
+    <p class="label">01 · LIVE RESULT</p>
+    <h2>ชิ้นงานชุดเดียวกัน <span class="grad" id="dHead">ใช้แผ่นน้อยลง</span></h2>
+    <p class="sub">ผลจริงจากเครื่องมือจัดวางของ Costa Nest กับชิ้นงาน <b id="dCount">38</b> ชิ้น เทียบกับการเรียงตามกรอบสี่เหลี่ยมแบบไม่หมุน (ระยะห่างและขอบแผ่นเท่ากัน)</p>
+  </header>
+  <div class="demoGrid">
+    <div class="demoStage" data-reveal>
+      <div class="demoTabs" role="group" aria-label="เลือกมุมมอง">
+        <button type="button" id="btnBefore" aria-pressed="false">เรียงตามกรอบ</button>
+        <button type="button" id="btnAfter" class="on" aria-pressed="true">Costa Nest</button>
+        <button type="button" id="btnReplay" class="replay">▶ จัดวางใหม่</button>
+      </div>
+      <canvas id="demoStage" width="1200" height="1000" role="img" aria-label="เปรียบเทียบการเรียงตามกรอบซึ่งใช้ 2 แผ่น กับ Costa Nest ซึ่งใช้ 1 แผ่น"></canvas>
+    </div>
+    <div class="stats" data-reveal>
+      <div class="stat"><p>แผ่นวัสดุที่ใช้</p><b><span class="was" id="sSheetsWas">2</span> → <span data-count id="sSheets">1</span></b><small>แผ่น</small></div>
+      <div class="stat"><p>พื้นที่ที่ใช้จริงต่อแผ่น</p><b><span class="was" id="sUtilWas">27.5%</span> → <span data-count id="sUtil">54.9</span>%</b><small id="sUtilNote"></small></div>
+      <div class="stat"><p>วิธีที่ใช้</p><b class="small">รูปทรงจริง · หมุนทุก 15° · วางในรูของชิ้นอื่น</b><small>ในแผงเลือกหมุนละเอียดได้ถึงทุก 10°</small></div>
+      <p class="fine">ผลขึ้นกับรูปทรงและจำนวนชิ้นงานของแต่ละงาน</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= features ================= -->
+<section id="features" class="features">
+  <header class="secHead" data-reveal>
+    <p class="label">02 · TOOLKIT</p>
+    <h2>6 เครื่องมือ <span class="grad">ในแผงเดียว</span></h2>
+    <p class="sub">ทำงานใน Illustrator โดยตรง เลือกชิ้นงาน กดปุ่ม แล้วดูพรีวิวก่อนนำไปใช้</p>
+  </header>
+  <div class="cards">
+    <article class="card" data-reveal><span class="no">01 · NESTING</span>
+      <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="5" y="5" width="38" height="38" rx="4"/><path d="M11 13l8-2 3 8-9 3zM26 11h11v9H26zM12 28l9 1-1 9-8-3zM27 26l9 4-5 8-6-5z"/></svg>
+      <h3>จัดวางชิ้นงาน</h3><p>วางตามรูปทรงจริง หมุนหามุมที่ลงตัว ใช้พื้นที่ในรูของชิ้นอื่น และขึ้นแผ่นใหม่ให้เองเมื่อเต็ม</p></article>
+    <article class="card" data-reveal><span class="no">02 · CONTOUR</span>
+      <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 9c8 0 14 6 14 14 0 10-9 16-14 16S10 33 10 23c0-8 6-14 14-14z" stroke-dasharray="3 3"/><circle cx="24" cy="23" r="7"/></svg>
+      <h3>ไดคัทตามรูปทรง</h3><p>สร้างเส้นตัดรอบชิ้นงานตามระยะที่ตั้ง ได้เป็นพาธใน Illustrator</p></article>
+    <article class="card" data-reveal><span class="no">03 · STICKER</span>
+      <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 7l5 10 11 1-8 8 2 11-10-5-10 5 2-11-8-8 11-1z"/><path d="M24 2l7 13 14 2-10 10 3 14-14-7-14 7 3-14L3 17l14-2z" stroke-dasharray="2 3"/></svg>
+      <h3>ไดคัทสติ๊กเกอร์</h3><p>ทำเส้นไดคัทรอบดวงสติ๊กเกอร์ จัดดวงลงแผ่นสำหรับงานตัด</p></article>
+    <article class="card" data-reveal><span class="no">04 · NUMBERING</span>
+      <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="6" y="10" width="15" height="12" rx="2"/><rect x="27" y="10" width="15" height="12" rx="2"/><rect x="6" y="27" width="15" height="12" rx="2"/><rect x="27" y="27" width="15" height="12" rx="2"/><path d="M12 14v5M32 14h4l-4 5h4M12 31h3l-3 2 3 2h-3M33 31v5"/></svg>
+      <h3>รันนัมเบอร์</h3><p>ใส่เลขต่อเนื่องหรือเลขหน้าให้หลายชิ้นพร้อมกัน</p></article>
+    <article class="card" data-reveal><span class="no">05 · DIMENSIONS</span>
+      <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="12" y="16" width="24" height="18" rx="2"/><path d="M12 9h24M12 6v6M36 6v6M41 16v18M38 16h6M38 34h6"/></svg>
+      <h3>สเกลและเส้นบอกขนาด</h3><p>ใส่เส้นบอกขนาดและสเกลให้ชิ้นงานอัตโนมัติ ส่งลูกค้าตรวจแบบได้ทันที</p></article>
+    <article class="card" data-reveal><span class="no">06 · QUOTE</span>
+      <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M12 6h18l8 8v28H12z"/><path d="M30 6v8h8M18 22h14M18 28h14M18 34h8"/></svg>
+      <h3>คิดราคา / ใบเสนอราคา</h3><p>คิดราคาจากขนาดชิ้นงาน แล้ววางใบเสนอราคาลงในเอกสารหรือคัดลอกส่งลูกค้า</p></article>
+  </div>
+</section>
+
+<!-- ================= real screens ================= -->
+<section class="screens">
+  <header class="secHead" data-reveal>
+    <p class="label">03 · INSIDE ILLUSTRATOR</p>
+    <h2>หน้าตาจริง <span class="grad">ตอนใช้งาน</span></h2>
+  </header>
+  <div class="screenGrid">
+    <figure class="tilt" data-reveal><img src="img/panel-nest.jpg" alt="แผง Costa Nest ใน Illustrator หลังกดจัดวาง แสดงพรีวิวชิ้นงานบนแผ่นวัสดุ" width="980" height="640" loading="lazy"><figcaption>พรีวิวผลจัดวางก่อนกด “นำไปใช้”</figcaption></figure>
+    <figure class="phone" data-reveal>
+      <video controls playsinline preload="none" poster="media/promo-cover.jpg" width="720" height="1280"><source src="media/promo.mp4" type="video/mp4"></video>
+      <figcaption>คลิปแนะนำ 49 วินาที</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ================= flow ================= -->
+<section id="flow" class="flow">
+  <header class="secHead" data-reveal>
+    <p class="label">04 · WORKFLOW</p>
+    <h2>จากชิ้นงาน <span class="grad">ถึงแผ่นพร้อมตัด</span></h2>
+  </header>
+  <ol class="steps4">
+    <li data-reveal><b>1</b><h3>เลือกชิ้นงาน</h3><p>เลือกชิ้นงานบนอาร์ตบอร์ด ใส่จำนวนชุด</p></li>
+    <li data-reveal><b>2</b><h3>ตั้งแผ่นวัสดุ</h3><p>ขนาดแผ่น ระยะขอบ ระยะห่าง และการหมุน</p></li>
+    <li data-reveal><b>3</b><h3>กดจัดวาง</h3><p>ดูพรีวิวทุกแผ่น พร้อมเปอร์เซ็นต์พื้นที่ที่ใช้</p></li>
+    <li data-reveal><b>4</b><h3>นำไปใช้</h3><p>วางผลลงเอกสาร Illustrator ส่งพิมพ์หรือส่งตัดต่อได้เลย</p></li>
+  </ol>
+  <div class="facts">
+    <div data-reveal><b>6</b><span>เครื่องมือในแผงเดียว</span></div>
+    <div data-reveal><b>36</b><span>ทิศทางการหมุน (ทุก 10°)</span></div>
+    <div data-reveal><b>2</b><span>ภาษา ไทย / English</span></div>
+    <div data-reveal><b>1</b><span>โค้ด ต่อคอมพิวเตอร์ 1 เครื่อง</span></div>
+  </div>
+</section>
+
+<!-- ================= buy (ids used by js/shop.js) ================= -->
+<section id="buy" class="buy">
+  <header class="secHead" data-reveal>
+    <p class="label">05 · LICENSE</p>
+    <h2>ซื้อ Costa Nest <span class="grad">ได้โค้ดทันที</span></h2>
+    <p class="sub">จ่ายผ่านพร้อมเพย์ ส่งรูปสลิป ระบบตรวจกับธนาคารแล้วแสดงโค้ดเปิดใช้งานให้เลย ไม่ต้องรอแอดมิน</p>
+  </header>
+  <ol class="how" data-reveal><li><b>1</b>เลือกแพ็กเกจ</li><li><b>2</b>สแกน QR โอนตามยอด</li><li><b>3</b>ส่งรูปสลิป รับโค้ด</li></ol>
+
+  <div id="plans" class="plans" aria-live="polite"><div class="plan skeleton"></div><div class="plan skeleton"></div></div>
+  <p id="shopMsg" class="note hidden"></p>
+  <ul class="trust" data-reveal><li>พร้อมเพย์ ทุกธนาคาร</li><li>ตรวจสลิปอัตโนมัติ</li><li>สลิปเดิมใช้ซ้ำไม่ได้</li><li>1 โค้ด / 1 เครื่อง</li></ul>
+
+  <div id="checkout" class="checkout hidden" aria-live="polite">
+    <div class="payCard">
+      <div class="payHead"><span id="coPlan"></span><button id="btnCancel" class="link" type="button">เปลี่ยนแพ็กเกจ</button></div>
+      <p class="amountLbl">ยอดที่ต้องโอน <small>ตรงทุกสตางค์ เพื่อให้ระบบรู้ว่าเป็นคำสั่งซื้อของคุณ</small></p>
+      <p class="amount"><span id="coAmount">0.00</span> <small>บาท</small></p>
+      <div class="qrWrap">
+        <p class="qrTitle">สแกนจ่ายด้วยแอปธนาคาร · พร้อมเพย์</p>
+        <canvas id="qr" width="264" height="264" aria-label="QR พร้อมเพย์สำหรับโอนเงิน"></canvas>
+        <p class="qrNote">QR นี้ใส่ยอดเงินให้แล้ว</p>
+        <a id="btnSaveQr" class="link" download="CostaNest-QR.png" href="#">บันทึกรูป QR (เปิดในแอปธนาคารบนมือถือ)</a>
+      </div>
+      <p class="timer" id="coTimer"></p>
+      <details class="manual"><summary>โอนเองโดยไม่สแกน</summary>
+        <dl><dt>ธนาคาร</dt><dd id="payBank"></dd><dt>เลขบัญชี</dt><dd><span id="payAcc"></span> <button class="link" id="btnCopyAcc" type="button">คัดลอก</button></dd>
+            <dt>ชื่อบัญชี</dt><dd id="payName"></dd><dt>ยอด</dt><dd><b id="payAmt"></b> บาท (ตรงทุกสตางค์)</dd></dl>
+      </details>
+    </div>
+    <div class="slipCard">
+      <h3>ส่งสลิปเพื่อรับโค้ด</h3>
+      <label class="drop" id="drop" for="slipFile">
+        <input id="slipFile" type="file" accept="image/*">
+        <img id="slipPreview" alt="" class="hidden">
+        <span id="dropText">แตะเพื่อเลือกรูปสลิป<br><small>หรือลากรูปมาวางที่นี่ · JPG / PNG</small></span>
+      </label>
+      <button id="btnSend" class="btn primary wide" type="button" disabled>ตรวจสลิปและรับโค้ด</button>
+      <p id="slipMsg" class="msg" role="status"></p>
+    </div>
+  </div>
+
+  <div id="result" class="result hidden" aria-live="polite">
+    <p class="ok">✓ ชำระเงินแล้ว</p>
+    <h3>โค้ดเปิดใช้งานของคุณ</h3>
+    <p class="plain" id="resPlan"></p>
+    <div class="codeBox"><code id="resCode"></code><button id="btnCopyCode" class="btn primary" type="button">คัดลอกโค้ด</button></div>
+    <p class="msg" id="copyMsg" role="status"></p>
+    <ol class="steps">
+      <li>ติดตั้ง Costa Nest (ดาวน์โหลดด้านล่าง) แล้วเปิด Illustrator</li>
+      <li>เมนู <b>Window &gt; Extensions &gt; Costa Nest</b> (หน้าต่าง &gt; ส่วนขยาย)</li>
+      <li>วางโค้ดในช่อง “คีย์ไลเซนส์ หรือ โค้ดซื้อ” แล้วกด <b>เปิดใช้งาน</b></li>
+    </ol>
+    <p class="note">1 โค้ด ใช้ได้กับคอมพิวเตอร์ 1 เครื่อง · เก็บสลิปไว้ ถ้าทำโค้ดหาย ส่งสลิปเดิมที่หน้านี้อีกครั้งจะได้โค้ดเดิมคืน</p>
+    <button id="btnAgain" class="link" type="button">ซื้อเพิ่มอีกเครื่อง</button>
+  </div>
+
+  <details class="lost" id="lost"><summary>เคยซื้อแล้ว แต่ทำโค้ดหาย?</summary>
+    <p>ส่งรูปสลิปเดิมที่นี่ ระบบจะแสดงโค้ดเดิมให้</p>
+    <input id="lostFile" type="file" accept="image/*">
+    <p id="lostMsg" class="msg" role="status"></p>
+  </details>
+</section>
+
+<!-- ================= faq ================= -->
+<section id="faq" class="faq">
+  <header class="secHead" data-reveal>
+    <p class="label">06 · FAQ</p>
+    <h2>คำถามที่พบบ่อย</h2>
+  </header>
+  <div class="qa">
+    <details data-reveal><summary>ใช้กับ Illustrator เวอร์ชันไหนได้บ้าง</summary><p>Adobe Illustrator 2020 ขึ้นไป ทั้ง Windows และ Mac</p></details>
+    <details data-reveal><summary>ซื้อแล้วได้อะไร</summary><p>ได้โค้ดซื้อ (CNC-…) ทันทีบนหน้านี้ นำไปวางในหน้าเปิดใช้งานของ Costa Nest แผงจะเปิดใช้งานกับคอมพิวเตอร์เครื่องนั้น</p></details>
+    <details data-reveal><summary>ต้องต่ออินเทอร์เน็ตตลอดไหม</summary><p>ต้องต่อเฉพาะตอนเปิดใช้งานครั้งแรก หลังจากนั้นใช้งานได้โดยไม่ต้องต่ออินเทอร์เน็ต (ยกเว้นตอนตรวจหาอัปเดต)</p></details>
+    <details data-reveal><summary>เปลี่ยนคอมพิวเตอร์ได้ไหม</summary><p>1 โค้ดใช้ได้ 1 เครื่อง ถ้าจะย้ายไปเครื่องใหม่ ทักแชทเพจ Costa design พร้อมโค้ดเดิม</p></details>
+    <details data-reveal><summary>มีเวอร์ชันใหม่จะรู้ได้อย่างไร</summary><p>แผงจะแจ้งเตือนเองเมื่อมีเวอร์ชันใหม่ กดปุ่ม “อัปเดต” ในแผงแล้วเปิด Illustrator ใหม่</p></details>
+    <details data-reveal><summary>โอนเงินแล้ว แต่ระบบตรวจสลิปไม่ผ่าน</summary><p>ทักแชทเพจ Costa design พร้อมแนบสลิป เราจะตรวจและส่งโค้ดให้</p></details>
+    <details data-reveal><summary>ทำโค้ดหาย</summary><p>เปิดหัวข้อ “เคยซื้อแล้ว แต่ทำโค้ดหาย?” ในส่วนราคา แล้วส่งรูปสลิปเดิม ระบบจะแสดงโค้ดเดิมให้</p></details>
+    <details data-reveal><summary>เปลี่ยนภาษาในแผงได้ไหม</summary><p>ได้ แผงมีภาษาไทยและอังกฤษ กดปุ่ม EN / TH ที่มุมบนของแผง</p></details>
+  </div>
+</section>
+
+<!-- ================= download ================= -->
+<section id="download" class="download">
+  <div class="dlBox" data-reveal>
+    <div>
+      <p class="label">07 · INSTALL</p>
+      <h2>ดาวน์โหลดตัวติดตั้ง</h2>
+      <p class="sub">สำหรับ Adobe Illustrator 2020 ขึ้นไป · แตกไฟล์ zip ปิด Illustrator แล้วดับเบิลคลิกตัวติดตั้ง</p>
+    </div>
+    <div class="dl">
+      <a class="btn ghost" id="dlWin" href="download/CostaNest-Installer-Windows.zip">Windows</a>
+      <a class="btn ghost" id="dlMac" href="download/CostaNest-Installer-Mac.zip">Mac</a>
+    </div>
+  </div>
+</section>
+
+<section class="final" data-reveal>
+  <h2>เริ่มประหยัดวัสดุ <span class="grad">ตั้งแต่งานถัดไป</span></h2>
+  <a class="btn primary" href="#buy">ซื้อ Costa Nest <span aria-hidden="true">→</span></a>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="footIn">
+    <a class="brand" href="#main"><img src="img/logo-small.png" alt="" width="54" height="36"><span>COSTA<b>NEST</b></span></a>
+    <p><b>Costa design</b> · <span id="contact">ทักแชทเพจ Costa design</span></p>
+    <p class="small">มีปัญหาการชำระเงินหรือโค้ด ส่งสลิปมาทางแชทได้ตลอด</p>
+  </div>
+</footer>
+
+<script src="js/config.js"></script>
+<script src="js/promptpay.js"></script>
+<script src="js/qrcode.js"></script>
+<script src="js/demo-data.js"></script>
+<script src="js/fx.js"></script>
+<script src="js/shop.js"></script>
+</body>
+</html>
